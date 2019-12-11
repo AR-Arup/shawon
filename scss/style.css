@@ -1,0 +1,479 @@
+/*  ############################### 
+    * ((...HTML, BODY...)) ?
+    ###############################  */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/*  ############################### 
+    * ((...PRELOADER...)) ?
+    ###############################  */
+#preloader {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+#status {
+  background-image: url("../img/preloader/Spinner.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+/*  ############################### 
+    * ((...TOP HEADER SECTION...)) ?
+    ###############################  */
+#top-header {
+  background-color: #E3E9FB;
+  padding: 2px 0;
+}
+
+#top-header .top-contact-left-side a {
+  margin-right: 6px;
+}
+
+#top-header .top-contact-right-side .social-icon {
+  float: right;
+}
+
+#top-header .top-contact-right-side .social-icon .facebook:hover {
+  background: #3B5998;
+}
+
+#top-header .top-contact-right-side .social-icon .facebook:hover .fab-1 {
+  color: #fff;
+}
+
+#top-header .top-contact-right-side .social-icon .skype {
+  padding: 0 7px;
+}
+
+#top-header .top-contact-right-side .social-icon .skype:hover {
+  background: #4DABF7;
+}
+
+#top-header .top-contact-right-side .social-icon .skype:hover .fab-2 {
+  color: #fff;
+}
+
+#top-header .top-contact-right-side .social-icon .twitter {
+  padding: 0 7px;
+}
+
+#top-header .top-contact-right-side .social-icon .twitter:hover {
+  background: #4DABF7;
+}
+
+#top-header .top-contact-right-side .social-icon .twitter:hover .fab-3 {
+  color: #fff;
+}
+
+#top-header .top-contact-right-side .social-icon .linkkedin {
+  padding: 0 7px;
+}
+
+#top-header .top-contact-right-side .social-icon .linkkedin:hover {
+  background: #e4193a;
+}
+
+#top-header .top-contact-right-side .social-icon .linkkedin:hover .fab-4 {
+  color: #fff;
+}
+
+#top-header .top-contact-right-side .social-icon .login a {
+  text-decoration: none;
+}
+
+#top-header .top-contact-right-side .social-icon .login:hover {
+  background-color: #EEEEEE;
+}
+
+#top-header .top-contact-right-side .social-icon .sign-up a {
+  text-decoration: none;
+}
+
+#top-header .top-contact-right-side .social-icon .sign-up:hover {
+  background-color: #EEEEEE;
+}
+
+#top-header .top-contact-right-side .social-icon li {
+  padding: 0px 10px;
+  display: inline-block;
+}
+
+#top-header .top-contact-right-side .social-icon li:last-child {
+  padding-right: 3px;
+  padding-left: 0;
+}
+
+/*  ############################### 
+    * ((...NAV SECTION...)) ?
+    ###############################  */
+nav {
+  padding: 5px 0;
+  background: #F8F8F8;
+}
+
+nav ul li a {
+  color: #35352a !important;
+  font-weight: bold !important;
+}
+
+nav .logo {
+  height: 65px;
+  width: auto;
+  float: left;
+}
+
+nav .main-nav {
+  float: right;
+  margin-top: 12px;
+}
+
+nav .main-nav li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+nav .main-nav li a:link,
+nav .main-nav li a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 8px 7px;
+  display: inline-block;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+nav .main-nav li a:link:hover,
+nav .main-nav li a:visited:hover {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  background: #6cace9;
+}
+
+nav .main-nav li:first-child {
+  margin-left: 0;
+}
+
+nav .active {
+  border-radius: 3px;
+}
+
+nav .mobile-menu span {
+  margin-top: 5px;
+  color: #000;
+  text-align: right;
+  float: right;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+nav .mobile-menu span:hover {
+  color: green;
+}
+
+nav .mobile-menu .overlay {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  overflow-x: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+nav .mobile-menu .overlay .close-btn-nav {
+  position: absolute;
+  right: 2.5rem;
+  top: .1rem;
+  font-size: 46px;
+  color: #fff;
+  float: right;
+  text-decoration: none;
+}
+
+nav .mobile-menu .overlay .overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+nav .mobile-menu .overlay .overlay-content a {
+  text-decoration: none;
+  display: block;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #999;
+  padding: .5rem 0;
+}
+
+nav .mobile-menu .overlay .overlay-content a:hover {
+  color: #ffff;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+nav .sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1c69b1;
+  z-index: 9999;
+}
+
+nav .sticky li a:hover {
+  color: white;
+  background: red;
+}
+
+/*  ############################### 
+    * ((...BANNER SECTION...)) ?
+    ###############################  */
+#banner {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/background-img/header.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/background-img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 85vh;
+}
+
+#banner .hero-text-box {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 17%;
+}
+
+#banner .hero-text-box h1 {
+  text-align: center;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  font-family: 'Metal Mania', cursive;
+  letter-spacing: 1px;
+}
+
+#banner .hero-text-box .small {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 29px;
+  letter-spacing: 3px;
+  font-style: italic;
+  font-family: 'Cookie', cursive;
+}
+
+#banner .hero-text-box .small-2 {
+  color: #fff;
+  font-size: 19px;
+  font-weight: normal;
+}
+
+#banner .hero-text-box .btn {
+  padding: 9px 28px;
+  border-radius: 28px;
+  margin-top: 15px;
+}
+
+.hero-text-box input {
+  display: block;
+  width: 100%;
+}
+
+/*  ############################### 
+    * ((...ABOUT US...)) ?
+    ###############################  */
+#about-us {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/background-img/about.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background-img/about.jpg");
+  background-size: cover;
+  background-position: top top;
+}
+
+#about-us .team-name h4 {
+  color: #fff;
+}
+
+#about-us .team-name h5 {
+  color: #fff;
+}
+
+#about-us h3 {
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+#about-us p {
+  text-align: center;
+  text-align: justify;
+  line-height: 38px;
+  font-size: 17px;
+  color: #fff;
+  padding: 0 2px;
+}
+
+#about-us a {
+  font-size: 13px;
+}
+
+#about-us .horizontal-header h2 {
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #f709c3;
+  font-family: 'Metal Mania', cursive;
+}
+
+#about-us .horizontal-header hr {
+  width: 100px;
+  background: #009DE9;
+  margin: auto;
+  padding: 1.5px;
+  border: none;
+}
+
+#about-us img {
+  width: 100px;
+  height: 100px;
+}
+
+/*  ############################### 
+      *(...MY PORTFOFLIO SECTION...) 
+    ###############################  */
+#portfolio {
+  background-color: #E3E9FB;
+}
+
+#portfolio .vertical-heading {
+  text-align: center;
+}
+
+#portfolio .vertical-heading h2 {
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+}
+
+#portfolio .vertical-heading .img-w {
+  width: 300px;
+}
+
+#portfolio .port-btn:hover {
+  background: #009DE9;
+}
+
+#portfolio .mixitup-control-active {
+  background: #009DE9;
+}
+
+#portfolio .zoom-image {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#portfolio .zoom-image:hover {
+  -webkit-box-shadow: 1px 1px 15px #009DE9;
+          box-shadow: 1px 1px 15px #009DE9;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+#portfolio .zoom-image:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  overflow: hidden;
+}
+
+#portfolio .zoom-image img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  nav .mobile-menu span {
+    display: block;
+  }
+  .main-nav {
+    display: none;
+  }
+  #top-header {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #banner .hero-text-box {
+    margin-top: 220px;
+  }
+  #banner .hero-text-box h1 {
+    font-size: 32px;
+  }
+  #banner .hero-text-box p {
+    width: 275px;
+    margin: auto;
+  }
+  #about-us .rounded-circle {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #banner .hero-text-box {
+    margin-top: 220px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
