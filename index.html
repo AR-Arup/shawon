@@ -8,7 +8,7 @@
     <!-- ? Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Metal+Mania&display=swap&subset=latin-ext" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Metal+Mania&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,200i,300,300i,400,400i,500,600,700&display=swap"
         rel="stylesheet">
@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- ? Main Css -->
     <link rel="stylesheet" href="scss/style.css">
+    <!-- ? Responsive Css -->
+    <link rel="stylesheet" href="scss/responsive.css">
     <title>Our Tech</title>
 </head>
 
@@ -118,8 +120,8 @@
                         <li class="active"><a href="#top-header">Home</a></li>
                         <li><a href="#about-us">About us</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#our-services">Services</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
 
                     <div class="mobile-menu">
@@ -130,8 +132,8 @@
                                 <a onclick="closeNav()" href="#top-header">Home</a>
                                 <a onclick="closeNav()" href="#about-us">About us</a>
                                 <a onclick="closeNav()" href="#portfolio">Portfolio</a>
-                                <a onclick="closeNav()" href="#">Services</a>
-                                <a onclick="closeNav()" href="#">Contact Us</a>
+                                <a onclick="closeNav()" href="#our-services">Services</a>
+                                <a onclick="closeNav()" href="#contact">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -194,7 +196,7 @@
                     <div class="col-lg-6 team-name mt-5">
                         <h3>Meet Our Team</h3>
                         <div class="img-1 d-flex">
-                            <img class="rounded-circle" src="img/team/shawon.jpg" alt="">
+                            <img class="rounded-circle" src="img/team/shawon.jpg" alt="Shohag">
 
                             <div class="content ml-4">
                                 <h4>MD Shohag</h4>
@@ -205,7 +207,7 @@
                         </div>
 
                         <div class="img-1 d-flex">
-                            <img class="rounded-circle" src="img/team/shawon.jpg" alt="">
+                            <img class="rounded-circle" src="img/team/shawon.jpg" alt="Shawon Miah">
 
                             <div class="content ml-4">
                                 <h4>MD Shawon</h4>
@@ -216,7 +218,7 @@
                         </div>
 
                         <div class="img-1 d-flex">
-                            <img class="rounded-circle" src="img/team/shawon.jpg" alt="">
+                            <img class="rounded-circle" src="img/team/arup.jpg" alt="Arup Kumar">
 
                             <div class="content ml-4">
                                 <h4>Arup Kumar</h4>
@@ -232,10 +234,10 @@
     <!-- ! END ABOUT US -->
 
 
-     <!-- ! ALL MY PORTFOLIO SECTION -->
+    <!-- ! ALL MY PORTFOLIO SECTION -->
 
-     <section class="py-5" id="portfolio">
-        <div class="container mt-4">
+    <section uk-lightbox="animation: scale" class="py-5" id="portfolio">
+        <div class="container my-4">
             <div class="row justify-content-end">
                 <div class="col-md-12">
                     <div class="vertical-heading">
@@ -255,9 +257,9 @@
             <div class="row portfolio-gallery">
                 <div class="col-md-4 mix logo my-3 zoom-image">
                     <div class="port-img">
-                       <a href="img/portfolio/logo/1.jpg">
-                           <img src="img/portfolio/logo/1.jpg" alt="">
-                       </a>
+                        <a href="img/portfolio/logo/1.jpg">
+                            <img src="img/portfolio/logo/1.jpg" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 mix shart my-3 zoom-image">
@@ -322,6 +324,103 @@
         </div>
     </section>
     <!-- ! END ALL PORTFOLIO SECTION -->
+
+
+    <!-- ! START SERVICES SECTION -->
+    <section id="our-services" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-3">
+                    <div class="vertical-heading">
+                        <h2>Professional Photo Editing Service</h2>
+                        <p class="text-muted">Our services at a glance</p>
+                        <img class="img-w" src="img/hr/hr.png" alt="#">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="services-1 part-1">
+                        <h4>Clipping Path Services</h4>
+                        <p>Clipping path is the mother of all other photo editing services. It's required for any
+                            editing service such as remove background, color correction, image masking, ghost mannequin
+                            etc.</p>
+                        <h6><span><i class="fas fa-check"></i></span> Cut Out Image</h6>
+                        <h6><span><i class="fas fa-check"></i></span> Simple Clipping Path</h6>
+                        <h6><span><i class="fas fa-check"></i></span> Standard Clipping Path</h6>
+                        <h6><span><i class="fas fa-check"></i></span> Complex Clipping Path</h6>
+                        <h6><span><i class="fas fa-check"></i></span> Super Complex Clipping Path</h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="services-1 part-2">
+                        <h4>Background Remove</h4>
+                        <p>As a professional photo editing service & outsourcing company, we also provide world-class
+                            background removal services. Background Removal services are divided among some classes.</p>
+                        <h6><span><i class="fas fa-check"></i></span> Erase Background </h6>
+                        <h6><span><i class="fas fa-check"></i></span> Deep Etching Service</h6>
+                        <h6><span><i class="fas fa-check"></i></span> Simple Background Remove</h6>
+                        <h6><span><i class="fas fa-check"></i></span> Complex Background Remove</h6>
+                        <h6><span><i class="fas fa-check"></i></span> Super Complex Background Remove</h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+                    <div class="services-1 part-3">
+                        <h4>Color Correction</h4>
+                        <p>Color Correction is mainly used for changing the color ofan image. It’s very vital for photo
+                            editing services. It gives us desire color of a photo. The classes of color correction are.
+                        </p>
+                        <h6><span><i class="fas fa-check"></i></span> Color Correction</h6>
+                        <h6><span><i class="fas fa-check"></i></span> Color Enhancement</h6>
+                        <h6><span><i class="fas fa-check"></i></span> Color Matching/Balancing</h6>
+                        <h6><span><i class="fas fa-check"></i></span> Color Brightening</h6>
+                        <h6><span><i class="fas fa-check"></i></span> Color Create</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ! END SERVICES SECTION -->
+
+
+    <!-- ! START CONTACT SECTION -->
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center">Get In Touch</h2>
+                    <p class="little-description text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Reprehenderit, unde?</p>
+                </div>
+            </div>
+
+            <form action="https://formspree.io/Kumararup977@gmail.com" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" name="Name" placeholder="Your Name*" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="Email" placeholder="Your Email*" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <textarea name="Messages" cols="30" rows="8" placeholder="Your Message *" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <input class="btn-submit" type="submit" value="SEND MESSAGE">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- ! END CONTACT SECTION -->
 
 
 

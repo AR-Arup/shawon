@@ -15,6 +15,8 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
   text-rendering: optimizeLegibility;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul {
@@ -182,7 +184,8 @@ nav .main-nav li a:link:hover,
 nav .main-nav li a:visited:hover {
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  background: #6cace9;
+  background: #C82333;
+  color: #fff !important;
 }
 
 nav .main-nav li:first-child {
@@ -399,6 +402,7 @@ nav .sticky li a:hover {
 }
 
 #portfolio .vertical-heading h2 {
+  color: #3F3F3F;
   font-size: 36px;
   letter-spacing: 4px;
   font-weight: 500;
@@ -415,6 +419,7 @@ nav .sticky li a:hover {
 
 #portfolio .mixitup-control-active {
   background: #009DE9;
+  color: white;
 }
 
 #portfolio .zoom-image {
@@ -443,7 +448,134 @@ nav .sticky li a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+/*  ############################### 
+    * ((...OUT SERVICES ...)) ?
+    ###############################  */
+#our-services .services-1 {
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  padding: 15px 8px;
+  -webkit-box-shadow: 0 0 4px #009DE9;
+          box-shadow: 0 0 4px #009DE9;
+}
+
+#our-services .services-1 h4 {
+  text-align: center;
+}
+
+#our-services .services-1 p {
+  text-align: justify;
+  margin: 15px 0;
+  line-height: 28px;
+  letter-spacing: .5px;
+}
+
+#our-services .services-1 .fas {
+  color: #06E595;
+  padding: 5px;
+}
+
+#our-services .services-1:hover {
+  background-color: #E3E9FB;
+  color: black;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+#our-services .vertical-heading {
+  text-align: center;
+}
+
+#our-services .vertical-heading h2 {
+  color: #3F3F3F;
+  font-size: 36px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+}
+
+#our-services .vertical-heading p {
+  letter-spacing: .5px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/*  ############################### 
+    * ((...CONTACT SECTION ...)) ?
+    ###############################  */
+#contact {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 84, 153, 0.9)), to(rgba(60, 84, 153, 0.9))), url("../img/background-img/contact-bg.jpg");
+  background: linear-gradient(rgba(60, 84, 153, 0.9), rgba(60, 84, 153, 0.9)), url("../img/background-img/contact-bg.jpg");
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #fff;
+}
+
+#contact .little-description {
+  color: #fff;
+}
+
+#contact form {
+  margin-top: 2rem;
+  width: 70%;
+  margin-left: 15%;
+}
+
+#contact form ::-webkit-input-placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+
+#contact form :-ms-input-placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+
+#contact form ::-ms-input-placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+
+#contact form ::placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  background: #273a71;
+  border: .1rem solid #273a71;
+  width: 100%;
+  padding: .5rem;
+  border-radius: .3rem;
+  font-size: 1rem;
+  color: #fff;
+  margin: 8px 0;
+}
+
+#contact .btn-submit {
+  border-radius: .3rem;
+  border: 0;
+  margin-top: 1rem;
+  color: #fff;
+  padding: .7rem 1rem;
+  background: #30bac7;
+}
+
+#contact .btn-submit:hover {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
+  #our-services .part-1 {
+    padding-bottom: 43px;
+  }
   nav .mobile-menu span {
     display: block;
   }
