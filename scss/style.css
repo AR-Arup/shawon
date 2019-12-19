@@ -150,6 +150,7 @@ nav {
 nav ul li a {
   color: #35352a !important;
   font-weight: bold !important;
+  letter-spacing: 1px;
 }
 
 nav .logo {
@@ -184,7 +185,7 @@ nav .main-nav li a:link:hover,
 nav .main-nav li a:visited:hover {
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  background: #C82333;
+  background: #17a2b8;
   color: #fff !important;
 }
 
@@ -324,6 +325,12 @@ nav .sticky li a:hover {
   padding: 9px 28px;
   border-radius: 28px;
   margin-top: 15px;
+  background: #17a2b8;
+  color: #fff;
+}
+
+#banner .hero-text-box .btn:hover {
+  background: #258c9c;
 }
 
 .hero-text-box input {
@@ -560,6 +567,8 @@ nav .sticky li a:hover {
 }
 
 #contact .btn-submit {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   border-radius: .3rem;
   border: 0;
   margin-top: 1rem;
@@ -570,6 +579,111 @@ nav .sticky li a:hover {
 
 #contact .btn-submit:hover {
   cursor: pointer;
+  background: #17a2b8;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+/*  ############################### 
+    * ((...FOOTER SECTION ...)) ?
+    ###############################  */
+#footer-part {
+  background: #071B4D;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+#footer-part span p {
+  margin-left: 58px;
+}
+
+#footer-part .fa-map-marker-alt {
+  padding: 10px 13px !important;
+}
+
+#footer-part .fas {
+  padding: 10px;
+  font-size: 20px;
+  background: #273A71;
+  border-radius: 26px;
+}
+
+#footer-part .text-box-footer p {
+  text-align: justify;
+  margin: 20px 0;
+  letter-spacing: .3px;
+  line-height: 25px;
+}
+
+#footer-part .about-social {
+  text-align: center;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+#footer-part .about-social .fab {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  margin-right: 30px;
+  padding: 10px;
+  font-size: 20px;
+  background: #273A71;
+  border-radius: 26px;
+  color: #fff;
+}
+
+#footer-part .about-social .fab:hover {
+  background: #30bac7;
+}
+
+#footer-part .about-social .fa-facebook-f {
+  padding: 10px 15px !important;
+}
+
+#footer-part .about-social .fa-facebook-f:hover {
+  background: #30bac7;
+}
+
+#footer-part .about-social .fa-linkedin-in {
+  padding: 10px 12px !important;
+}
+
+#footer-part .about-social .fa-linkedin-in:hover {
+  background: #30bac7;
+}
+
+#footer-part .about-social .fa-line {
+  padding: 10px 12px !important;
+}
+
+#footer-part .about-social .fa-line:hover {
+  background: #30bac7;
+}
+
+#footer-last-area {
+  border-top: 0.1px solid #8f8989;
+  background: #000;
+  color: #fff;
+}
+
+#footer-last-area p {
+  font-size: 14px;
+  color: #f4f4f4;
+}
+
+#footer-last-area .btn-back-to-top {
+  position: fixed;
+  bottom: 17px;
+  right: 20px;
+  font-size: 18px;
+  color: white;
+  background: #30bac7;
+  padding: 2px 7px;
+  border-radius: 15px;
+}
+
+#footer-last-area .btn-back-to-top:hover {
+  background: #17a2b8;
 }
 
 @media only screen and (max-width: 768px) {
