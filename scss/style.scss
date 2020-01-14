@@ -30,6 +30,35 @@ ul {
 }
 
 
+
+
+
+/*  ############################### 
+    * ((...ANIMATION DIRECTION Or DEALY...)) ?
+    ###############################  */
+
+.heading-one,
+.small
+
+{
+  animation-direction: 1.6s;
+  animation-delay: .5s;
+}
+
+.small-2 {
+  animation-delay: 1s;
+  animation-duration: .6s;
+}
+
+.animated-home-btn {
+  animation-duration: 1s;
+  animation-delay: .5s;
+}
+
+
+
+
+
 /*  ############################### 
     * ((...PRELOADER...)) ?
     ###############################  */
